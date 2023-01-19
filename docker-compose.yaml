@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  server:
+    image: postgrest/postgrest
+    ports:
+      - "3000:3000"
+    environment:
+      PGRST_JWT_SECRET: DL9Y0f3gHSaqzqKAdkq3QAxweOF7cu79
+      PGRST_JWT_SECRET_IS_BASE64: False
+      PGRST_DB_URI: postgres://postgres:postgres@db:5432/r7platform
+      PGRST_DB_SCHEMAS: api
