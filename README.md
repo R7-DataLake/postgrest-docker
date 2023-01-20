@@ -1,7 +1,7 @@
 
 # Create configure
 ```
-postgrest -e postgrest.conf
+postgrest -e > postgrest.conf
 ```
 
 Edit `postgrest.conf`
